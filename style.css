@@ -9,7 +9,9 @@ background-color: rgb(25,30,50);
 	font-weight: normal;
 	height: 100%;
 }
-
+.pointercursor{
+    cursor: pointer;
+}
 h1{
     color: white;
     text-align: center;
@@ -140,6 +142,16 @@ p{
     align: center;
 }
 
+.divlinks{
+    border: 4px solid white;
+    width: 400px;
+    opacity: 1;
+    transition: border 0.25s;
+}
+.divlinks:hover{
+    border: 8px solid rgb(40,150,200);
+    opacity:0.6;
+}
 h1, .h1, h2, .h2, h3, .h3 {
 	margin-bottom: 15px;
 }

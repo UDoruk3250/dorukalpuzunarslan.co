@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Doruk Alp Uzunarslan</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,9 +30,9 @@
         </div>
 
       <a href="#qualifications">Qualifications</a>
-	  <a href="#project">Projects</a>
-	  <a href="#about">About Me</a>
-	  <a onclick="document.getElementById('welcome').scrollIntoView();">Home</a>
+	  <a href="/project">Projects</a>
+	  <a href="/about">About Me</a>
+	  <a href="#" onclick="document.getElementById('welcome').scrollIntoView(); cursor: pointer;">Home</a>
 	</div>
     <!--/NAVIGATION BAR-->
 
@@ -47,21 +48,32 @@
         <h1  style="color: white;
     text-align: center;
     font-size: 60px;
-    text-shadow: 10px 4px 8px #000000;
+    text-shadow: 10px 4px 6px #000000;
     position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"> Doruk Alp Uzunarslan </h1>
         <p style="font-size: 30px;
         margin-top:120px;
     position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"> Official Website</p>
     </div>
 
+    <hr>
+    <div>
+        <h1 style="margin-top: 100px;" id="welcome"> Welcome to my page! </h1>
 
-    <div >
-        <h1 style="margin-top: 50px;" id="welcome"> Welcome to my page! </h1>
-
-        <p >I'm Doruk Alp Uzunarslan and this is my personal website.</p>
+        <p style="text-align: center; margin-top: 25px;">I'm Doruk Alp Uzunarslan and this is my personal website. </p>
+        <p style="text-align: center; margin-top: 50px;">This is my website where I plan to publish my projects and articles that I currently work on. </p>
     </div>
 
+    <div onclick="gotoTop()" class="divlinks" style="margin-left: 300px;">
+        <img src="">
+        <h2 style="text-align: center"><strong>About Me</strong></h2>
 
+        <div style=" margin:auto;">
+            <hr>
+            <p style="text-align: center; font-size:20px; max-width: 150px; margin: auto;">This page is all about me and my previous achievements throughout... </p>
+
+            <a href="#about" style="text-align: right; font-size:20px; margin-right: 20px; display: block; color: white;">Read More...</a>
+        </div>
+    </div>
 
     <script>
             // Get the button
