@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hi!</h1>
+    <div class="topnav">
+          <a href="#contact">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Links
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Dummy Link1</a>
+                    <a href="#">Dummy Link2</a>
+                    <a href="#">Dummy Link3</a>
+                </div>
+            </div>
+
+          <a href="qualifications">Qualifications</a>
+          <a href="projects">Projects</a>
+          <a class="active" href="" >About Me</a>
+        <!-- TODO: CHANGE THE HREF!!! -->
+          <a href="//localhost:63342/dorukalpuzunarslan.co/" onclick="gotoHome()" class="pointercursor">Home</a>
+	</div>
+
+    <h1 style="margin-top: 100px;">About Me</h1>
+    <p class="revealUp" style="font-size: 30px; margin-left: 200px; margin-right: 200px; padding: 0px 0px 0px 50px;">  </p>
+
 </body>
 </html>
