@@ -115,10 +115,21 @@ body{
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
+.fa-custom{
+    background-color: #FFFFFF;
+}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.container{
+    position: relative;
+    text-align: center;
+}
+
+td{
+    padding-top: 20px;
+    padding-left: 40px;
 }
 
 .revealUp {
