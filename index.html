@@ -23,16 +23,14 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Dummy Link1</a>
-                <a href="#">Dummy Link2</a>
-                <a href="#">Dummy Link3</a>
+                <a href="#">Soon To Be Added...</a>
             </div>
         </div>
 
       <a href="qualifications">Qualifications</a>
 	  <a href="projects">Projects</a>
 	  <a href="about">About Me</a>
-	  <a onclick="gotoHome()" class="pointercursor">Home</a>
+	  <a onclick="gotoHome()" class="pointercursor" id="homebtn">Home</a>
 	</div>
     <!--/NAVIGATION BAR-->
 
@@ -95,6 +93,7 @@
             // Get the button
             let mybutton = document.getElementById("topBtn");
             let home = document.getElementById("welcome");
+            let homebtn = document.getElementById("homebtn");
 
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {scrollFunction()};
@@ -103,8 +102,11 @@
               if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.transition = "opacity 0.5s";
                 mybutton.style.opacity = 1;
+                homebtn.classList.add("active");
               } else {
                 mybutton.style.opacity = 0;
+                homebtn.classList.remove("active");
+
               }
             }
 
@@ -116,6 +118,8 @@
             function gotoHome() {
               document.body.scrollTop = document.body.scrollHeight;
               document.documentElement.scrollTop = document.documentElement.scrollHeight;
+              homebtn.classList.add("active");
+
             }
     </script>
 </body>

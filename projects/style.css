@@ -159,6 +159,11 @@ h1{
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
 }
+h2, h3, h4, h5, h6 {
+    color: white;
+	font-weight: normal;
+	font-family: 'Ubuntu', sans-serif;
+}
 
 p{
     color: white;

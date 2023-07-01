@@ -85,8 +85,8 @@ h1{
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04A8FA;
-  color: white;
+  background-color: #FFFFFF;
+  color: black;
 }
 
 .dropdown-content {

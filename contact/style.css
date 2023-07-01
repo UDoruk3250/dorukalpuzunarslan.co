@@ -125,20 +125,22 @@ body{
 .container{
     position: relative;
     text-align: center;
-    width: 110px;
+    width: 120px;
     opacity: 1;
 }
 
 .container:hover{
-    border: 5px solid rgb(200,200,250);
+    z-index: 99;
+    outline: 5px solid rgb(200,200,250);
     border-radius: 8px;
-    opacity: 0.8;
-    transition: border 0.25s, opacity 0.25s;
+    opacity: 0.6;
+    transition: outline 0.25s,
+    opacity 0.25s;
 
 }
 td{
     padding-top: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .revealUp {
