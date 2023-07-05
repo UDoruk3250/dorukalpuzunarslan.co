@@ -133,7 +133,7 @@ body{
     z-index: 99;
     outline: 5px solid rgb(200,200,250);
     border-radius: 8px;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: outline 0.25s,
     opacity 0.25s;
 
