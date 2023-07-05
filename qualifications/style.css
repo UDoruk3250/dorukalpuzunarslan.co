@@ -152,14 +152,22 @@ td{
     from { opacity: 0.25; }
     to   { opacity: 1; }
 }
-
-h1{
+li{
+    font-color: white;
+    font-size: 26px;
+    color: white;
+    margin-bottom: 40px;
+}
+h1, h2{
     color: white;
     text-align: center;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
 }
-
+img{
+    width: 500px;
+    margin-left: 160px;
+}
 p{
     color: white;
 	font-weight: normal;
