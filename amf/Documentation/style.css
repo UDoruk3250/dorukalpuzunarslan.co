@@ -194,8 +194,11 @@ a {
 #button-home:hover #underline {
   left: 0;
 }
-
+.visible{
+  display: block;
+}
 .lineUp {
+  display: none;
   animation: 3s anim-lineUp ease-out;
   opacity: 1;
 }
