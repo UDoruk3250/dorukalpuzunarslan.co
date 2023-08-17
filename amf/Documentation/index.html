@@ -5,6 +5,18 @@
     <title>amf Documentation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.lineUp');
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+  </script>
 <body>
 <div style="display: flex;">
 <a href="/../../#">
@@ -26,13 +38,19 @@
 <hr style="margin-top: 20px;">
 
 <div class="vertical-menu">
-  <a href="#" class="active">Description</a>
-  <a href="#">Reference</a>
-  <a href="#">Install</a>
+  <a onclick="showSection('description')" class="active">Description</a>
+  <a onclick="showSection('reference')" >Reference</a>
+  <a onclick="showSection('install')" >Install</a>
 </div>
 <div style="margin-left: 280px;">
-    <p class="lineUp" style="opacity:1;">
+    <p id="description" class="lineUp" style="opacity:1;">
         This is some text.
+    </p>
+    <p id="reference" class="lineUp" style="opacity:1;">
+        This is some text about reference.
+    </p>
+    <p id="install" class="lineUp" style="opacity:1;">
+        This is some text about installation.
     </p>
 </div>
 </body>
