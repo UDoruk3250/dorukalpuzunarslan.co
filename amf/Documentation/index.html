@@ -32,6 +32,7 @@
     }
   </script>
 <body>
+
 <div style="display: flex;">
 <a href="/../../">
 <div style="position: absolute;" class="button" id="button-home">
@@ -51,13 +52,17 @@
 </div>
 <hr style="margin-top: 20px;">
 
-<div class="vertical-menu" style="width: 260px;padding-left: 10px;margin-left:0;height: 100%; background-color: rgb(15,20,40);">
+<div style="display: flex">
+<div style=" position: absolute; width: 280px;padding-left: 10px;padding-right: 40px;margin-left:0;margin-bottom: 0;height: 1000px; background-color: rgb(15,20,40);">
+
+
+    <div class="vertical-menu" style="width: 280px;;padding-left: 10px;padding-right: 60px;margin-left:0;margin-bottom: 0;height: 300px;">
   <a id="Btndescription" onclick="showSection('description')" class="active">Description</a>
   <a id="Btnreference" onclick="showSection('reference')" >Reference</a>
   <a id="Btninstall" onclick="showSection('install')" >Install</a>
 </div>
-
-<div >
+</div>
+<div>
     <p id="description" class="lineUp" style="font-size:18px;margin-left:400px; margin-right:400px;line-height:28px;">
 
         This project introduces a new molecule-containing file format - called Absolute Molecule Format - which
@@ -81,14 +86,43 @@
         Another remarkable feature of .amf format is its low memory consumption. The special format occupies much less
         memory than other molecule file formats. For example:
     </p>
-    <table id="description" class="lineUp" style="display: table; font-size:18px;margin-left: auto;margin-right: auto;line-height:28px;">
-        <tr style="display: table;">
+    <table id="description" class="lineUp" style="border-spacing: 8px;font-size:18px;margin-left: 500px;margin-right: auto;line-height:28px;">
+        <tr style="width:100%;margin:auto;">
 
         <th><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">.amf format</p></th>
         <th><p style="margin: 0;padding-top: 10px;padding-bottom: 10px;">.pdb format</p></th>
 
         </tr>
+        <tr>
+            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">Glucose molecule file</p></td>
+            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">Glucose molecule file</p></td>
+        </tr>
+        <tr>
 
+                <td><a href="/../../src/glucose.amf" download>
+                    <div style="display:block">
+
+                    <img src="/../../src/f.png" style="width:120px;height:130px;">
+                    <br>
+                    AMF file
+                    </div>
+                </a>
+                </td>
+                <td><a href="/../../src/glucose.pdb" download>
+                    <div style="display:block">
+
+                    <img src="/../../src/f.png" style="width:120px;height:130px;">
+                    <br>
+                    PDB file
+                    </div>
+                </a>
+                </td>
+
+        </tr>
+        <tr>
+            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">818 bytes</p></td>
+            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">2,002 bytes (~2Kb)</p></td>
+        </tr>
     </table>
 
     <p id="reference" class="lineUp" style="margin-left:400px;">
@@ -105,6 +139,7 @@
         <br>
         <i><code style="padding: 6px 6px 6px 6px; background-color: rgb(30,30,30,100); border-radius: 8px; font-size: 24px; text-align: center;">pip install amfpy-python</code></i>
     </p>
+</div>
 </div>
 </body>
 </html>
