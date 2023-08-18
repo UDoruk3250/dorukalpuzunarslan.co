@@ -8,11 +8,19 @@
 <script>
     function showSection(sectionId) {
       const sections = document.querySelectorAll('.lineUp');
+      const buttons = document.querySelectorAll('#Btndescription, #Btnreference, #Btninstall');
       sections.forEach(section => {
         if (section.id === sectionId) {
           section.style.display = 'block';
         } else {
           section.style.display = 'none';
+        }
+      });
+      buttons.forEach(button => {
+        if (button.id === "Btn" + sectionId) {
+          button.classList.add('active');
+        } else {
+          button.classList.remove('active');
         }
       });
     }
@@ -38,10 +46,11 @@
 <hr style="margin-top: 20px;">
 
 <div class="vertical-menu">
-  <a onclick="showSection('description')" class="active">Description</a>
-  <a onclick="showSection('reference')" >Reference</a>
-  <a onclick="showSection('install')" >Install</a>
+  <a id="Btndescription" onclick="showSection('description')" class="active">Description</a>
+  <a id="Btnreference" onclick="showSection('reference')" >Reference</a>
+  <a id="Btninstall" onclick="showSection('install')" >Install</a>
 </div>
+
 <div style="margin-left: 280px;">
     <p id="description" class="lineUp" style="opacity:1;">
         This is some text.
