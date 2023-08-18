@@ -6,6 +6,7 @@ body {
 background-color: rgb(25,30,50);
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: normal;
+	text-color: white;
 	height: 100%;
 }
 .pointercursor{
@@ -142,7 +143,6 @@ p{
 
 th,td{
     border: 2px solid white;
-    margin: auto;
     padding: auto;
     text-align:center;
     width: 200px;
@@ -256,9 +256,12 @@ a {
     color: rgb(25,30,50);
 }
 .vertical-menu {
-  position:fixed;
-  margin-left: 20px;
-  width: 200px; /* Set a width if you like */
+  display:flex;
+  flex-direction: column;
+  position:sticky;
+  z-index: 99;
+  top:0;
+  margin-left: 20px; /* Set a width if you like */
 }
 
 .vertical-menu a {
