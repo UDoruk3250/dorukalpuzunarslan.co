@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <script>
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        showSection("description");
+    });
+
     function showSection(sectionId) {
+    console.log("hey");
       const sections = document.querySelectorAll('.lineUp');
       const buttons = document.querySelectorAll('#Btndescription, #Btnreference, #Btninstall');
       sections.forEach(section => {
@@ -45,21 +51,49 @@
 </div>
 <hr style="margin-top: 20px;">
 
-<div class="vertical-menu">
+<div class="vertical-menu" style="width: 260px;padding-left: 10px;margin-left:0;height: 100%; background-color: rgb(15,20,40);">
   <a id="Btndescription" onclick="showSection('description')" class="active">Description</a>
   <a id="Btnreference" onclick="showSection('reference')" >Reference</a>
   <a id="Btninstall" onclick="showSection('install')" >Install</a>
 </div>
 
-<div style="margin-left: 280px;">
-    <p id="description" class="lineUp" style="opacity:1;">
-        This is some text.
+<div >
+    <p id="description" class="lineUp" style="font-size:18px;margin-left:400px; margin-right:400px;line-height:28px;">
+
+        This project introduces a new molecule-containing file format - called Absolute Molecule Format - which
+        concurrently aims to make molecular modelling more accesible and comprehendable. Although various types of
+        molecule files exist, this specific file format generically utilizes the improvisations on legibility of file
+        format, and file size.
     </p>
-    <p id="reference" class="lineUp" style="opacity:1;">
+    <h1 style="margin-right:auto; margin-left:auto; margin-top: 40px;" id="description" class="lineUp">Readability</h1>
+    <p id="description" class="lineUp" style="font-size:18px;margin-left:400px; margin-right:400px;line-height:28px;">
+
+        One of the most striking advantages of the "Absolute Molecule Format" is its unparalleled legibility. The
+        structure of molecules, being complex and intricate, demands a representation that can be easily interpreted
+        by both humans and computational algorithms. .amf achieves this by employing a clear and intuitive syntax that
+        captures the intricate details of chemical entities in a comprehensible manner. This feature makes this new
+        molecule file format outstand from other formats.
+    </p>
+
+    <h1 style="margin-top: 40px;" id="description" class="lineUp">File Size</h1>
+    <p id="description" class="lineUp" style="font-size:18px;margin-left:400px; margin-right:400px;line-height:28px;">
+
+        Another remarkable specification
+    </p>
+
+    <p id="reference" class="lineUp" style="margin-left:400px;">
         This is some text about reference.
     </p>
-    <p id="install" class="lineUp" style="opacity:1;">
-        This is some text about installation.
+    <p id="install" class="lineUp"  style="margin-left:400px; font-size: 22px;">
+        <br>
+        PyPi Link: <a href="https://pypi.org/project/amfpy-python/">PyPi</a>
+        <br>
+        <br>
+        <br>
+        The python library can be installed to the machine via the following command:
+        <br>
+        <br>
+        <i><code style="padding: 6px 6px 6px 6px; background-color: rgb(30,30,30,100); border-radius: 8px; font-size: 24px; text-align: center;">pip install amfpy-python</code></i>
     </p>
 </div>
 </body>
