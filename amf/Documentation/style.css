@@ -139,6 +139,14 @@ p{
 	font-weight: normal;
 	font-family: 'Ubuntu', sans-serif;
 }
+
+th,td{
+    border: 2px solid white;
+    margin: auto;
+    padding: auto;
+    text-align:center;
+    width: 200px;
+}
 .center-fit {
     opacity: 0.9;
     width: 100%;
