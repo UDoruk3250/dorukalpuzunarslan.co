@@ -89,17 +89,17 @@
     <table id="description" class="lineUp" style="border-spacing: 8px;font-size:18px;margin-left: 500px;margin-right: auto;line-height:28px;">
         <tr style="width:100%;margin:auto;">
 
-        <th><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">.amf format</p></th>
-        <th><p style="margin: 0;padding-top: 10px;padding-bottom: 10px;">.pdb format</p></th>
+        <th class="th"><p style="font-size: 18px; margin: 0; padding-top: -10px;padding-bottom: -10px;">.amf format</p></th>
+        <th class="th"><p style="font-size: 18px;margin: 0;padding-top: -10px;padding-bottom: -10px;">.pdb format</p></th>
 
         </tr>
         <tr>
-            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">Glucose molecule file</p></td>
-            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">Glucose molecule file</p></td>
+            <td class="td"><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">Glucose molecule file</p></td>
+            <td class="td"><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">Glucose molecule file</p></td>
         </tr>
         <tr>
 
-                <td><a href="/../../src/glucose.amf" download>
+                <td class="td"><a href="/../../src/glucose.amf" download>
                     <div style="display:block">
 
                     <img src="/../../src/f.png" style="width:120px;height:130px;">
@@ -108,7 +108,7 @@
                     </div>
                 </a>
                 </td>
-                <td><a href="/../../src/glucose.pdb" download>
+                <td class="td"><a href="/../../src/glucose.pdb" download>
                     <div style="display:block">
 
                     <img src="/../../src/f.png" style="width:120px;height:130px;">
@@ -120,8 +120,8 @@
 
         </tr>
         <tr>
-            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">818 bytes</p></td>
-            <td><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">2,002 bytes (~2Kb)</p></td>
+            <td class="td"><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">818 bytes</p></td>
+            <td class="td"><p style="margin: 0; padding-top: 10px;padding-bottom: 10px;">2,002 bytes (~2Kb)</p></td>
         </tr>
     </table>
 
@@ -136,7 +136,7 @@
                 <tr>
                   <th>Keyword</th>
                   <th>Description</th>
-                  <th>USAGE</th>
+                  <th style="padding-left: 380px;">USAGE</th>
                 </tr>
             </thead>
         </table>
@@ -148,28 +148,55 @@
       <tbody>
         <tr>
           <td><b>ORI</b></td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
+          <td>Builds an origin which can be named and then summoned by that name.</td>
+          <td>ORI <i>[ORIGIN_NAME]</i></td>
+        </tr><tr>
+          <td><b>STOP</b></td>
+          <td>This keyword should be put at the last line of an ORI block to seperate the blocks.</td>
+          <td>STOP</td>
         </tr>
+
         <tr>
           <td><b>INS</b></td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
+          <td>Invokes an origin. The origin needs to be declared beforehand.</td>
+          <td>INS <i>[ORIGIN_NAME] [X] [Y] [Z]</i></td>
         </tr>
         <tr>
           <td><b>ATOM</b></td>
-          <td>ADELAIDE</td>
-          <td>+1.36%</td>
+          <td>Instructs to create an atom. Can be drawn 2D or 3D afterward.</td>
+          <td>ATOM <i>[ID] [ATOM_NUMBER] [X] [Y] [Z]</i></td>
         </tr>
         <tr>
           <td><b>BND</b></td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
+          <td>Similar to the ATOM keyword, creates a bond between atoms.</td>
+          <td>BND <i>[ID] [BOND_TYPE] [ATOM_ID_1] [ATOM_ID_2]</i></td>
         </tr>
+        <tr>
+          <td><b>EXP</b></td>
+          <td>For explanation; can be written anything. Must be declared at the start of the file.</td>
+          <td>EXP <i>[EXPLANATION]</i></td>
+        </tr>
+        <tr>
+          <td><b>STT</b></td>
+          <td>Starts the building part. All invokes,bond and atom placements must be done here. </td>
+          <td>STT</td>
+        </tr>
+        <tr>
+          <td><b>STP</b></td>
+          <td>Finishes the building part.</td>
+          <td>STP</td>
+        </tr>
+        <tr>
+          <td><b>END</b></td>
+          <td>Indicates that the file has ended. It must be put at the end of the file.</td>
+          <td>END</td>
+        </tr>
+
         </tbody>
     </table>
   </div>
   </div>
+        <p id="reference" class="lineUp" style="display:block; text-align:center;">For any questions or unclear statements, contact me <b><a href="https://UDoruk3250.github.io/contact/">Through here</a></b></p>
 
     <p id="install" class="lineUp"  style="margin-left:400px; font-size: 22px;">
         <br>
