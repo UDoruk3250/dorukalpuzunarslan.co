@@ -141,12 +141,13 @@ p{
 	font-family: 'Ubuntu', sans-serif;
 }
 
-th,td{
+.th,.td{
     border: 2px solid white;
     padding: auto;
     text-align:center;
     width: 200px;
 }
+
 .center-fit {
     opacity: 0.9;
     width: 100%;
@@ -294,7 +295,7 @@ a {
   background-color: rgba(255,255,255,0.3);
  }
 .tbl-content{
-  height:300px;
+  height: 467px; /* 53px each */
   overflow-x:auto;
   margin-top: 0px;
   border: 1px solid rgba(255,255,255,0.3);
@@ -303,6 +304,7 @@ b{
 font-size: 18px;
 }
 th{
+  text-align: center;
   padding: 20px 15px;
   text-align: left;
   font-weight: 500;
